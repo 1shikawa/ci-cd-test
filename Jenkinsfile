@@ -3,14 +3,19 @@ node{
 	git 'https://github.com/1shikawa/ci-cd-test'
  }
 
+ stage('Test'){
+	sh 'echo "This is CI-CD Test!!"'
+ }
+
+
 //  stage('Maven Package'){
 // 	sh 'mvn clean package'
 // 	sh 'mv target/myweb*.war target/myweb.war'
 //  }
 
- stage('Build Docker Imager'){
-   sh 'docker build -t 1shikawa/myweb:0.0.1 .'
- }
+//  stage('Build Docker Imager'){
+//    sh 'docker build -t 1shikawa/myweb:0.0.1 .'
+//  }
 
 //  stage('Push to Docker Hub'){
 
