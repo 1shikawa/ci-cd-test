@@ -3,9 +3,18 @@ node{
 	git 'https://github.com/1shikawa/ci-cd-test'
  }
 
- stage('Test'){
-	sh 'echo "This is CI-CD Test!!"'
+ stage('Build'){
+	sh 'echo "This is Build stage!"'
  }
+
+  stage('Test'){
+	sh 'echo "This is Test stage!"'
+ }
+
+   stage('Deploy'){
+	sh 'echo "This is Deploy stage!!"'
+ }
+
 
 
 //  stage('Maven Package'){
